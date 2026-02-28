@@ -1,0 +1,96 @@
+/* Page Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Success Message */
+h1 {
+    position: absolute;
+    top: 20px;
+    color: white;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input[type="text"]:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #4e73df;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e59d9;
+}
+
+/* Reset Button */
+button[type="reset"] {
+    background-color: #e74a3b;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #be2617;
+}
+
+/* Link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DataList</title>
+    <link rel="stylesheet" href="/datanamepage.css">
+</head>
+<body>
+<a th:href="@{/datanamepage(direction=${direction == 'asc' ? 'desc' : 'asc'})}">
+    <button>short <span th:text="${direction=='asc'?'asending':'desending'}"></span></button>
+</a>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Qualification</th>
+        <th>Phone</th>
+        <th>Gender</th>
+        <th>Edit</th>
+        <th><a th:href="@{/deleteall}"><button>DeleteAllRecords</button></a></th>
+    </tr>
+    <tr th:each="list:${datapagelist}">
+    <td th:text="${list.name}"></td>
+        <td th:text="${list.email}"></td>
+        <td th:text="${list.qulification}"></td>
+        <td th:text="${list.phone}"></td>
+        <td th:text="${list.gender}"></td>
+        <td><a th:href="@{/edit/{id}(id=${list.id})}" ><button>Edit</button></a></td>
+        <td><a th:href="@{/delete/{id}(id=${list.id})}" onclick="return confirm('Are You Ok to delete This')"><button>Delete</button></a></td>
+    </tr>
+</table>
+</body>
+</html>

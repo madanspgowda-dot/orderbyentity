@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>FormPage</title>
 </head>
+<link rel="stylesheet" href="/formpage.css">
 <body>
 <h1 th:text="${success}"></h1>
-<form th:action="@{/form}" method="post" th:object="${formdata}">
+<form th:action="${id!=null}?@{/edit}:@{/form}" method="post" th:object="${formdata}">
+    <input type="hidden" th:field="*{id}">
     <label > Name:</label>
     <input type="text" th:field="*{name}" placeholder="Enter The Name" required><br><br>
     <label > Email:</label>
@@ -24,6 +26,8 @@
     </label>
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>
+
 </form>
+<a th:href="@{datanamepage}">datalistpage</a>
 </body>
 </html>

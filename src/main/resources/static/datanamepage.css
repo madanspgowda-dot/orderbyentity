@@ -1,0 +1,100 @@
+/* Page Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Sort Button */
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Sort Button Style */
+a > button {
+    background-color: #2e59d9;
+    color: white;
+}
+
+a > button:hover {
+    background-color: #1b3c9e;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Table Header */
+th {
+    background-color: #4e73df;
+    color: white;
+    padding: 12px;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Row */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #1cc88a;
+    color: white;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    background-color: #17a673;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #e74a3b;
+    color: white;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Delete All Button */
+.delete-all-btn {
+    background-color: darkred;
+    color: white;
+    padding: 6px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.delete-all-btn:hover {
+    background-color: red;
+}
